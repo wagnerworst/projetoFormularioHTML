@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editora Sistema</title>
+</head>
+<body>
+    <h1>Sistema de Editora 01.00.00</h1>
+    <br>
+    <h2>Cadastrar Livros na base de dados</h2>
+    <form action="https://api-aula.up.railway.app/livros" method="POST">
+        <input type="text" name="title" placeholder="Título do livro">
+        <input type="text" name="description" placeholder="Descrição do livro">
+        <button>Mandar dados para a API</button>
+    </form>
+    <p>Este formulário irá enviar um comando POST para que a API faça o trabalho dela.</p>
+    <p>Neste caso, guardar na base de dados o que estamos enviando aqui.</p>
+    <hr>
+    <h2>Mostrar Livros já cadastrados</h2>
+    <form action="https://api-aula.up.railway.app/livros" method="GET">
+        <button>Pedir Livros para a API</button>
+    </form>
+    <p>Este formulário irá enviar um comando GET para que a API faça o trabalho dela.</p>
+    <p>Neste caso, buscar na base os dados que já estão guardados</p>
+    
+</body>
+</html>
+<style>
+    body
+    {
+        background-color: darkgrey;
+    }
+</style>
